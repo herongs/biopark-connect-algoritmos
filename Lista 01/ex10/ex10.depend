@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1656703477 source:d:\user\desktop\curso biopark connect\exercicios algoritmos\ex10\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
