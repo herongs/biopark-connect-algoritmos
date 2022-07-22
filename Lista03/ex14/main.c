@@ -7,7 +7,9 @@ for igual a “Sim”.*/
 
 int main()
 {
-    char resp[4];
+
+    char resp[3];
+
 
 
 
