@@ -8,7 +8,10 @@ for igual a “Sim”.*/
 int main()
 {
 
-    char resp[3];
+    char resposta[4];
+
+    printf("Ola, tudo bem?");
+    scanf("")
 
 
 

@@ -10,6 +10,7 @@ a 0.*/
 int main()
 {
 
+    float peso,bebida, valorTotal;
 
     printf("Bem vindo ao restaurante 123.\n O valor do quilo e de 23,59 reais... \n");
     system("pause");
@@ -17,13 +18,13 @@ int main()
     do {
         printf("Qual o peso do prato? \n");
         scanf("%f", &peso);
-        printf("Qual o valor gasto com bebidas?\n")
-
+        printf("Qual o valor gasto com bebidas?\n");
+        scanf("%f", &bebida);
+        valorTotal = ((peso*15) + bebida);
+        printf("\nO valor total a ser pago e: %.2f \n\n"  , valorTotal);
 
     }
+    while (peso != 0 && bebida != 0) ;
 
-
-
-
-
+    return 0;
 }
