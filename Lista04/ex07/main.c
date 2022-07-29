@@ -6,9 +6,24 @@ R e a S. Considere que no mesmo vetor não haverá números repetidos. Escrever o v
 
 int main()
 {
-    int vet1[5],vet2[10]
+    int vet1[5],vet2[10], vet3[5], vet = 0;
 
-
-
-
+    for(int i = 0; i < 10; i++){
+        printf("Qual o valor do vetor 2: ");
+        scanf("%d", &vet2[i]);
+    }
+    printf("\n");
+    for(int i = 0; i < 5; i++){
+        printf("Qual o valor do vetor 1: ");
+        scanf("%d", &vet1[i]);
+        for(int j = 0; j < 10; j++){
+            if (vet1[i] == vet2[j]){
+                vet3[vet] = vet2[j];
+                vet++;
+            }
+        }
+      }
+    for(int i = 0; i < 5; i++){
+        printf("Vetor 3 - Posicao [%d]: %d \n", i, vet3[i]);
+    }
 }
