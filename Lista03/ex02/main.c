@@ -15,9 +15,8 @@ int main()
     scanf("%d", &n);
 
 
-    for ( ; i <= n ; ){
+    for ( ; i <= n ; i++){
         total = total + i;
-        i++;
 
     }
 
