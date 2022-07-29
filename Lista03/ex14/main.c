@@ -11,7 +11,14 @@ int main()
     char resposta[4];
 
     printf("Ola, tudo bem?");
-    scanf("")
+    fgets(resposta, 4, stdin);
+
+    while ((resposta[0] == 'n') && (resposta[1] == 'a') && (resposta[2] == 'o')){
+        printf("Ola, tudo bem?");
+        fflush(stdin);
+        fgets(resposta, 4, stdin);
+    }
+
 
 
 

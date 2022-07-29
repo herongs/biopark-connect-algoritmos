@@ -10,7 +10,7 @@ int main()
 
     total = 0;
 
-    for ( int i = 0; i < 5 ; i++){
+    for ( int i = 0; i < 20 ; i++){
         printf("Qual a sua idade?:\n");
         scanf("%f", &num );
 

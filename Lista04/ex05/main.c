@@ -8,26 +8,25 @@ c) a média dos elementos armazenados no vetor que são superiores a 15. */
 
 int main()
 {
-    int TAM=3;
-    int vetor[TAM], somaInf = 0, somaIgual = 0, somaSup = 0, somaMaior = 0, result, i;
+    int vet[10], somaInf = 0, somaIgual = 0, somaMaior = 0, somaMedia = 0 ;
+    float media;
 
-    for( int i = 0; i < TAM; i++){
-        printf("Qual o valor do vetor:\n");
-        scanf("%d", &vetor[i]);
+    for(int i = 0; i < 10; i++){
+        printf("Qual o valor [%d] do vetor: ", i);
+        scanf("%d", &vet[i]);
 
-        if ( vetor[i] < 15)
-            somaInf = somaInf + vetor[i];
-        if (vetor[i] == 15)
+        if (vet[i] < 15)
+            somaInf += vet[i];
+        if (vet[i] == 15)
             somaIgual++;
-        if (vetor[i] > 15){
+        if (vet[i] > 15){
             somaMaior++;
-            somaSup = somaSup + vetor[i];
-            result = somaSup / somaMaior;}
-
+            somaMedia += vet[i];}
     }
-    printf("Numeros menor que 15: %d \n", somaInf);
-    printf("Numeros iguais a 15: %d \n", somaIgual);
-    printf("Media dos numeros : %d \n", result);
+    media = somaMedia/somaMaior;
+    printf("\nA soma de elementos que sao inferiores a 15: %d\n", somaInf);
+    printf("A quantidade de elementos que sao iguais a 15: %d\n", somaIgual);
+    printf("a média dos elementos armazenados no vetor que sao superiores a 15: %.2f\n", media);
 
 
 }
