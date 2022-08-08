@@ -4,29 +4,36 @@
 /*Escreva uma função que computa a potência ab para valores a (double) e b (int) passados por parâmetro (não use bibliotecas como math.h). Use a função anterior e crie um programa que imprima todas
 as potências: */
 
+
+double potenciacao (double num, int elevado);
+
 int main()
 {
+    double num;
+    int elevado;
 
-    int x, n, potencia, contador;
+    printf("Insira o primeiro numero: ");
+    scanf("%lf", &num);
+    printf("Insira a potencia: ");
+    scanf("%d", &elevado);
 
-  printf("\n\tCalculo de potencias\n");
-  printf("\nDigite um numero inteiro: ");
-  scanf("%d", &x);
-  printf("Digite um numero um inteiro nao-negativo: ");
-  scanf("%d", &n);
+    printf("\n potencia: %.2lf",  potenciacao (num, elevado) );
+
+}
 
 
+double potenciacao (double num, int elevado){
 
-  /* Inicializacoes */
-  potencia = 1;
-  contador = 0;
+    int contador;
+    double potencia;
 
-  /* Calculo da potencia */
- int potenci  while (contador != n) {
-    potencia = potencia * x;
-    contador = contador + 1;
-  }
+    //Limitadores
+    potencia = 1;
 
-  printf("\nO valor de %d elevado a %d: %d\n", x, n, potencia);
-  return 0;
+    for (int i = 1; i <= elevado; i++){
+        potencia = potencia * num;
+        printf("%.2lf ^ %d: %.2lf \n", num , i, potencia);
+    }
+
+    return potencia;
 }
