@@ -9,13 +9,9 @@ float fatorial(float num);
 
 int main()
 {
+    float num, resultado ;
 
-    float num, resultado;
-
-    printf("Insira o fatorial: ");
-    scanf("%f", &num);
-
-    printf("%.2f", fatorial(resultado));
+    printf("O fatorial de %.2f e :%.2f \n", num, fatorial(num));
 
 }
 
@@ -23,10 +19,17 @@ float fatorial(float num){
 
     float resultado;
 
+    for(int num = 1; num <= 20; num++){
+    resultado = 1;
     for (int i = 1; i <= num; i++){
-        resultado = resultado * i;
+        if (num > 0){
+        resultado = resultado * i;}
+        else
+        resultado = 1;
     }
-
+    printf("\nO fatorial de %d e :%.2f", num, resultado);
+    }
     return resultado;
 
 }
+
