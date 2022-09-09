@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1662486899 source:d:\user\desktop\curso biopark connect\exercicios algoritmos\biopark-connect-algoritmos\lista06-arquivo\criando_arquivos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+
