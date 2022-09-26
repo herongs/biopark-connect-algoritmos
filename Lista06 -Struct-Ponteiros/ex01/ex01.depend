@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1663187809 source:d:\user\desktop\curso biopark connect\exercicios algoritmos\biopark-connect-algoritmos\lista06 -struct-ponteiros\ex01\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
