@@ -6,7 +6,7 @@
 
 int main()
 {
-         int vet[] = {8,7,6,5,4,3,2,1};
+    int vet[] = {8,7,6,5,4,3,2,1};
     int tam = sizeof(vet)/sizeof(int);
     int aux;
     int x = 1;
